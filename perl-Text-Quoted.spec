@@ -4,7 +4,7 @@
 #
 Name     : perl-Text-Quoted
 Version  : 2.10
-Release  : 13
+Release  : 14
 URL      : https://cpan.metacpan.org/authors/id/B/BP/BPS/Text-Quoted-2.10.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/B/BP/BPS/Text-Quoted-2.10.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libt/libtext-quoted-perl/libtext-quoted-perl_2.09-2.debian.tar.xz
@@ -82,7 +82,7 @@ make TEST_VERBOSE=1 test
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-Text-Quoted
-cp %{_builddir}/Text-Quoted-2.10/deblicense/copyright %{buildroot}/usr/share/package-licenses/perl-Text-Quoted/6cdf787a274af49fe2e242c3aa39c007dc57f844
+cp %{_builddir}/debian/copyright %{buildroot}/usr/share/package-licenses/perl-Text-Quoted/6cdf787a274af49fe2e242c3aa39c007dc57f844
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -106,4 +106,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/Text/Quoted.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Text/Quoted.pm
