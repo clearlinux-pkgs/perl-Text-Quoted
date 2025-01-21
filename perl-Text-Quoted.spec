@@ -4,7 +4,7 @@
 #
 Name     : perl-Text-Quoted
 Version  : 2.10
-Release  : 22
+Release  : 23
 URL      : https://cpan.metacpan.org/authors/id/B/BP/BPS/Text-Quoted-2.10.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/B/BP/BPS/Text-Quoted-2.10.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libt/libtext-quoted-perl/libtext-quoted-perl_2.09-2.debian.tar.xz
